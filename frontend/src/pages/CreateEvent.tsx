@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { FaDashboard, FaCalendarAlt, FaTicketAlt, FaChartBar, FaCog } from 'react-icons/fa';
+import { FaTachometerAlt, FaCalendarAlt, FaTicketAlt, FaChartBar, FaCog } from 'react-icons/fa';  // Replaced FaDashboard with FaTachometerAlt
 
 interface FormData {
     name: string;

@@ -1,4 +1,4 @@
-import QRCode from 'qrcode.react';
+import { QRCodeSVG } from 'qrcode.react';  // Updated import
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import * as htmlToImage from 'html-to-image';
@@ -39,7 +39,7 @@ export default function MyTickets() {
                             transition={{ duration: 0.5 }}
                         >
                             <div id={`ticket-${ticket.id}`} className="bg-bg-white p-4 rounded-xl mb-4 inline-block">
-                                <QRCode value={ticket.qrValue} size={128} className="mb-4" />
+                                <QRCodeSVG value={ticket.qrValue} size={128} className="mb-4" />  // Updated component
                             </div>
                             <h3 className="text-xl font-bold mb-2">{ticket.event}</h3>
                             <p className="text-text-sub-gray mb-1">📅 {ticket.date}</p>
