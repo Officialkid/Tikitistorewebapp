@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Custom theme colors */
+/* Custom theme colors - Light */
 @theme {
   --color-primary-blue-light: #A0C3FF;
   --color-primary-blue-mid: #5C8DFF;
@@ -9,6 +9,20 @@
   --color-bg-light-gray: #F6F7FA;
   --color-text-dark-gray: #333333;
   --color-text-sub-gray: #777777;
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-bg-white: #1F2937;
+  /* gray-800 */
+  --color-bg-light-gray: #374151;
+  /* gray-700 */
+  --color-text-dark-gray: #F3F4F6;
+  /* gray-100 */
+  --color-text-sub-gray: #9CA3AF;
+  /* gray-400 */
+  --color-primary-blue-dark: #1D4ED8;
+  /* Darker blue for contrast */
 }
 
 /* Global styles */
@@ -29,7 +43,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Wave divider for sections */
+/* Wave divider */
 .wave-divider {
   position: relative;
   height: 50px;
@@ -41,4 +55,5 @@ a:hover {
   bottom: 0;
   width: calc(100% + 1.3px);
   height: 50px;
+  fill: var(--color-bg-light-gray);
 }
