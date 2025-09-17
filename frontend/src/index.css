@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Custom theme colors from your specs */
+/* Custom theme colors */
 @theme {
   --color-primary-blue-light: #A0C3FF;
   --color-primary-blue-mid: #5C8DFF;
@@ -25,5 +25,20 @@ body {
 button:hover,
 a:hover {
   opacity: 0.9;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s, transform 0.2s;
+  transform: scale(1.05);
+}
+
+/* Wave divider for sections */
+.wave-divider {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+
+.wave-divider svg {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% + 1.3px);
+  height: 50px;
 }
