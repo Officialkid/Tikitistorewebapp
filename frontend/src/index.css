@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Custom theme colors from your specs */
+@theme {
+  --color-primary-blue-light: #A0C3FF;
+  --color-primary-blue-mid: #5C8DFF;
+  --color-primary-blue-dark: #3F6FFF;
+  --color-bg-white: #FFFFFF;
+  --color-bg-light-gray: #F6F7FA;
+  --color-text-dark-gray: #333333;
+  --color-text-sub-gray: #777777;
+}
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: var(--color-bg-white);
+  color: var(--color-text-dark-gray);
+}
+
+/* Hover effects */
+button:hover,
+a:hover {
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
