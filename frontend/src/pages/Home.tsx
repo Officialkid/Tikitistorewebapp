@@ -75,6 +75,7 @@ export default function Home() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                     <UpcomingEventCard
+                        id={1} // Added IDs
                         badge="Comedy"
                         badgeColor="bg-pink-100 text-pink-600"
                         image="https://via.placeholder.com/300x200?text=Comedy+Night"
@@ -85,6 +86,7 @@ export default function Home() {
                         buttonText="Add to Cart"
                     />
                     <UpcomingEventCard
+                        id={2}
                         badge="Tech"
                         badgeColor="bg-blue-100 text-blue-600"
                         image="https://via.placeholder.com/300x200?text=Tech+Talk"
@@ -95,6 +97,7 @@ export default function Home() {
                         buttonText="Add to Cart"
                     />
                     <UpcomingEventCard
+                        id={3}
                         badge="Film"
                         badgeColor="bg-purple-100 text-purple-600"
                         image="https://via.placeholder.com/300x200?text=Film+Festival"
@@ -105,6 +108,7 @@ export default function Home() {
                         buttonText="Add to Cart"
                     />
                     <UpcomingEventCard
+                        id={4}
                         badge="Charity"
                         badgeColor="bg-green-100 text-green-600"
                         image="https://via.placeholder.com/300x200?text=Charity+Run"
